@@ -1,0 +1,104 @@
+/*
+    CSS syntax:
+    selector {
+        property:value;
+    }
+*/
+
+/*Universal sleector - allows us to select ALL of our elements*/
+/*  All the elemts will have font style of courier new and by default monospace is fallback font*/
+* {
+    font-family: "Courier New", monospace;
+    font-size: 20px;
+
+    margin: 0;
+    padding: 0;
+}
+body {
+    background-color: skyblue;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+nav {
+    background-color: white;
+}
+
+/*ID Selector it is given more priority than the other selectors*/
+#ceu-motto {
+    letter-spacing: 5px;
+}
+/*Type Selector -  allows us to select all elements of the same types */
+h1 {
+    color: black;
+    text-align: center;
+    font-size: 2rem;
+/*  
+    rem is a measurement which means num * the default size of root element's font (16px)
+    
+    Any Declaration with !important will be teh highest priority. 
+    this is especially useful if you want to override  a css style.
+    However, if an implementation of the keyword in internal or 
+    inline css we will still follow the level specifity:
+        1. inline with !important
+        2. internal with !important
+        3. external with !important
+*/
+}
+
+section {
+    height: 100vh;
+/*      vh means viewport height meaning in this measurement takes the percentage
+of the overall height of the screen you are viewwing with*/
+    text-align: center;
+}
+h2 {
+    font-size: 1.5rem;
+}
+
+ol {
+    list-style-type:none;
+}
+
+
+input[required] {
+    border-width: 2px;
+    border-style: solid;
+    border-color: navy;
+    width: 90%;
+}
+/*Class Selector*/
+.offering-item {
+
+                    text-transform: uppercase;
+
+}
+
+#ceu-motto + img {
+    height: 300px;
+    width: 300px;
+    border-radius: 150px;
+
+}
+
+#ceu-learning-list li {
+    color: #075966;
+}
+
+/*General sibiling Selector - allows to select sibilings that are after our previous sibiling*/
+
+h2 ~ a {
+    text-decoration:none;
+}
+
+form {
+    text-align:center;
+    background-color: white;
+    border:2px solid black;
+    height: 185px;
+    width: 25vw;
+    position: relative;
+    left: 37.25%;
+}
