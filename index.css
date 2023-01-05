@@ -102,3 +102,11 @@ form {
     position: relative;
     left: 37.25%;
 }
+
+section > form > button {
+    color: white;
+    background-color: #cf0053;
+    border:0;
+    border-radius: 15px;
+
+}
